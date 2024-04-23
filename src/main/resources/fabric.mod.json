@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tooltips_scaler",
+	"version": "${version}",
+	"name": "tooltips_scaler",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tooltips_scaler/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"venroy.tooltips_scaler.Tooltips_scaler"
+		],
+		"client": [
+			"venroy.tooltips_scaler.Tooltips_scalerClient"
+		]
+	},
+	"mixins": [
+		"tooltips_scaler.mixins.json",
+		{
+			"config": "tooltips_scaler.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
