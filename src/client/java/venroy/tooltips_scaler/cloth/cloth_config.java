@@ -10,7 +10,8 @@ public class cloth_config implements ConfigData {
 
     public float cloth_size = 1;
     public boolean cloth_permanent_fade = false;
-    public float cloth_fade_size = 1;
+    @ConfigEntry.BoundedDiscrete(max = 10, min= 1)
+    public int cloth_fade_size = 10;
 
 
 }

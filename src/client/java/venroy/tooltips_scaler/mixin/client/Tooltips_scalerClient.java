@@ -35,7 +35,7 @@ public class Tooltips_scalerClient {
 	}
 	@Redirect(method = "renderHeldItemTooltip", at = @At(value = "FIELD", target = "Lnet/minecraft/client/gui/hud/InGameHud;heldItemTooltipFade:I"))
 	private int modifyFade(InGameHud instance){
-		if(Tooltips_scaler.config.cloth_permanent_fade == true){
+		if(Tooltips_scaler.config.cloth_permanent_fade){
 			return (int) Tooltips_scaler.config.cloth_fade_size;
 		}
 		else return heldItemTooltipFade;
