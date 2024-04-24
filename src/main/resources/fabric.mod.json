@@ -16,9 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"venroy.tooltips_scaler.Tooltips_scaler"
+
 		],
 		"client": [
+			"venroy.tooltips_scaler.Tooltips_scaler"
+		],
+		"modmenu": [
+			"venroy.tooltips_scaler.cloth.modmenu"
 		]
 	},
 	"mixins": [
