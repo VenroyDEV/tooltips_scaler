@@ -16,6 +16,8 @@ public class Tooltips_scalerClient {
 	@Shadow private int scaledWidth;
 	@Shadow private int scaledHeight;
 
+	@Shadow private int heldItemTooltipFade;
+
 	@Inject(method = "renderHeldItemTooltip", at = @At("HEAD"))
 	private void injectHead(DrawContext context, CallbackInfo ci) {
 		context.getMatrices().push();
@@ -30,6 +32,13 @@ public class Tooltips_scalerClient {
 	@Redirect(method = "renderHeldItemTooltip", at = @At(value = "FIELD", target = "Lnet/minecraft/client/gui/hud/InGameHud;scaledHeight:I"))
 	private int modifyHeight(InGameHud instance) {
 		return (int) (scaledHeight / Tooltips_scaler.config.cloth_size);
+	}
+	@Redirect(method = "renderHeldItemTooltip", at = @At(value = "FIELD", target = "Lnet/minecraft/client/gui/hud/InGameHud;heldItemTooltipFade:I"))
+	private int modifyFade(InGameHud instance){
+		if(Tooltips_scaler.config.cloth_permanent_fade == true){
+			return (int) Tooltips_scaler.config.cloth_fade_size;
+		}
+		else return heldItemTooltipFade;
 	}
 
 	@Inject(method = "renderHeldItemTooltip", at = @At("TAIL"))

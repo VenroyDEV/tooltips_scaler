@@ -9,6 +9,9 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 public class cloth_config implements ConfigData {
 
     public float cloth_size = 1;
+    public boolean cloth_permanent_fade = false;
+    public float cloth_fade_size = 1;
+
 
 }
 

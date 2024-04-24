@@ -1,4 +1,6 @@
 {
   "text.autoconfig.tooltips_scaler.option.cloth_size" :"Tooltips Scaling",
-  "text.autoconfig.tooltips_scaler.title" : "Tooltips"
+  "text.autoconfig.tooltips_scaler.title" : "Tooltips",
+  "text.autoconfig.tooltips_scaler.option.cloth_fade_size" : "Fade in (example: 100 = infinite)",
+  "text.autoconfig.tooltips_scaler.option.cloth_permanent_fade" : "Disable Fade out"
 }
