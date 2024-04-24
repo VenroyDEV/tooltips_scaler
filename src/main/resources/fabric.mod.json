@@ -19,7 +19,6 @@
 			"venroy.tooltips_scaler.Tooltips_scaler"
 		],
 		"client": [
-			"venroy.tooltips_scaler.Tooltips_scalerClient"
 		]
 	},
 	"mixins": [
