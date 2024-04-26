@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "venroy.tooltips_scaler.mixin.client",
-	"compatibilityLevel": "JAVA_17",
-	"client": [
-		"Tooltips_scalerClient"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "venroy.tooltips_scaler.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "tooltips_Inventory",
+    "Tooltips_scalerClient"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

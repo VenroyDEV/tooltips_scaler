@@ -15,7 +15,6 @@ import venroy.tooltips_scaler.Tooltips_scaler;
 public class Tooltips_scalerClient {
 	@Shadow private int scaledWidth;
 	@Shadow private int scaledHeight;
-
 	@Shadow private int heldItemTooltipFade;
 
 	@Inject(method = "renderHeldItemTooltip", at = @At("HEAD"))

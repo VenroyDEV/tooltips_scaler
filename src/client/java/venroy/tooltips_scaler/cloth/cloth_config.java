@@ -12,6 +12,7 @@ public class cloth_config implements ConfigData {
     public boolean cloth_permanent_fade = false;
     @ConfigEntry.BoundedDiscrete(max = 10, min= 1)
     public int cloth_fade_size = 10;
+    public int tooltips_inventory =1;
 
 
 }
