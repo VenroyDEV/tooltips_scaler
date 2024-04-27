@@ -20,7 +20,7 @@ public class Tooltips_scalerClient {
 	@Inject(method = "renderHeldItemTooltip", at = @At("HEAD"))
 	private void injectHead(DrawContext context, CallbackInfo ci) {
 		context.getMatrices().push();
-		context.getMatrices().scale(Tooltips_scaler.config.cloth_size, Tooltips_scaler.config.cloth_size, 1); //fuck around and add sliders
+		context.getMatrices().scale(Tooltips_scaler.config.cloth_size, Tooltips_scaler.config.cloth_size, 1);
 	}
 
 	@Redirect(method = "renderHeldItemTooltip", at = @At(value = "FIELD", target = "Lnet/minecraft/client/gui/hud/InGameHud;scaledWidth:I"))

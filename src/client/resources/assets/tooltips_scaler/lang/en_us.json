@@ -2,5 +2,10 @@
   "text.autoconfig.tooltips_scaler.option.cloth_size" :"Tooltips Scaling",
   "text.autoconfig.tooltips_scaler.title" : "Tooltips",
   "text.autoconfig.tooltips_scaler.option.cloth_fade_size" : "Transparency (example: 1 - 10)",
-  "text.autoconfig.tooltips_scaler.option.cloth_permanent_fade" : "Disable Fade out"
+  "text.autoconfig.tooltips_scaler.option.cloth_permanent_fade" : "Disable Fade out",
+  "text.autoconfig.tooltips_scaler.option.modifyXAxisValue" :"Position X Coordinate (if you scale up use '-' ",
+  "text.autoconfig.tooltips_scaler.option.modifyYAxisValue": "Position Y Coordinate (if you scale up use '-'",
+  "text.autoconfig.tooltips_scaler.option.hud_scale" : "Increase HUD for tooltip (will prob add float soon)"
+
+
 }
