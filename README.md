@@ -4,7 +4,7 @@
 
 # Tooltips Scaler
 
-A Minecraft Mod that provides scalability to Tooltips, it is currently requires to use this Mod Menu.
+A Minecraft Mod that provides scalability to Tooltips, it currently requires "Mod Menu".
 
 > If you study Japanese, I recommend to combine this mod with
 > https://github.com/keve1227/furigana <br>
